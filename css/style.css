@@ -86,6 +86,7 @@ img{
 
 
 .header-navigation-link {
+    position: relative; 
     color: #2E2F42;
     font-family: inherit;
     font-size: 16px;
@@ -118,7 +119,6 @@ img{
 .header-navigation-list {
     display: flex;
     gap: 40px;
-    position: relative;
 }
 
 .header-list-item {
@@ -149,14 +149,13 @@ img{
 .header-address-link:hover,
 .header-address-link:focus {
     color: #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ========================================== */
 
 /* ==================SECTION HERO IMAGE================== */
 .hero-image {
-    background-image: linear-gradient( 0, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),  url(/images/header-img.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),  url(/images/header-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -197,8 +196,8 @@ img{
 
 .hero-image-btn:focus,
 .hero-image-btn:hover{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404BBF;
-    transition-duration: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ========================================== */
 
@@ -331,8 +330,7 @@ img{
 .icon-link:hover,
 .icon-link:focus {
     background-color: #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================================== */
@@ -367,8 +365,7 @@ img{
 
 .portfolio-list-item:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-container{
@@ -413,8 +410,7 @@ img{
     height: 100%;
     transform: translateY(100%);
     transition-property: transform; 
-    transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4D5AE5;
     display: flex;
     justify-content: center;
